@@ -8,9 +8,6 @@ Page({
     inputVal: "", // 搜索框内容
     category_box_width: 750, //分类总宽度
     goodsRecommend: [], // 推荐商品
-    kanjiaList: [], //砍价商品列表
-    pingtuanList: [], //拼团商品列表
-    kanjiaGoodsMap: {}, //砍价商品列表
 
     indicatorDots: true,
     autoplay: true,
@@ -26,8 +23,6 @@ Page({
     
     scrollTop: 0,
     loadingMoreHidden: true,
-
-    coupons: [],
 
     curPage: 1,
     pageSize: 20,
@@ -77,9 +72,6 @@ Page({
       withShareTicket: true
     }) 
     const that = this
-    // if (e && e.query && e.query.inviter_id) { 
-    //   wx.setStorageSync('referrer', e.query.inviter_id)
-    // }
     if (e && e.scene) {
       const scene = decodeURIComponent(e.scene)
       if (scene) {        
@@ -138,10 +130,7 @@ Page({
         })
       }      
     })
-    that.getCoupons()
     that.getNotice()
-    that.kanjiaGoods()
-    that.pingtuanGoods()
   },
   onPageScroll(e) {
     let scrollTop = this.data.scrollTop
@@ -185,16 +174,6 @@ Page({
         loadingMoreHidden: true,
         goods: goods,
       });
-    })
-  },
-  getCoupons: function() {
-    var that = this;
-    WXAPI.coupons().then(function (res) {
-      if (res.code == 0) {
-        that.setData({
-          coupons: res.data
-        });
-      }
     })
   },
   onShareAppMessage: function() {    
@@ -253,34 +232,5 @@ Page({
     this.setData({
       inputVal: e.detail.value
     });
-  },
-  // 以下为砍价业务
-  kanjiaGoods(){
-    const _this = this
-    WXAPI.kanjiaList().then(function (res) {
-      if (res.code == 0) {
-        _this.setData({
-          kanjiaList: res.data.result,
-          kanjiaGoodsMap: res.data.goodsMap
-        })
-      }
-    })
-  },
-  goCoupons: function (e) {
-    wx.navigateTo({
-      url: "/pages/coupons/index"
-    })
-  },
-  pingtuanGoods(){ // 获取团购商品列表
-    const _this = this
-    WXAPI.goods({
-      pingtuan: true
-    }).then(res => {
-      if (res.code === 0) {
-        _this.setData({
-          pingtuanList: res.data
-        })
-      }
-    })
   }
 })

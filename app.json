@@ -3,8 +3,7 @@
     "pages/start/start",
     "pages/index/index",
     "pages/goods-details/index",
-    "pages/goods-details/poster",
-    "pages/my/index",
+    "pages/about/index",
     "pages/notice/show",
     "pages/authorize/index",
     "pages/authorize/bindmobile",
@@ -30,7 +29,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/my/index",
+        "pagePath": "pages/about/index",
         "iconPath": "images/nav/my-off.png",
         "selectedIconPath": "images/nav/my-on.png",
         "text": "关于"
