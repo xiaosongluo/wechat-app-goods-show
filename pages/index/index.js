@@ -101,17 +101,10 @@ Page({
       })
     })
     WXAPI.goodsCategory().then(function(res) {
-      // let categories = [{
-      //   id: 0,
-      //   icon: '/images/fl.png',
-      //   name: "全部"
-      // }];
       let categories = [];
       if (res.code == 0) {
         categories = categories.concat(res.data)
       }
-      // const _n = Math.ceil(categories.length / 2)
-      // const _n = Math.ceil(categories.length)
       const _n = 5
       that.setData({
         categories: categories,

@@ -5,9 +5,5 @@ const AUTH = require('../../utils/auth')
 
 Page({
 	data: {
-  },
-	onLoad() {
-	},	
-  onShow() {
   }
 })
