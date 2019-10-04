@@ -19,7 +19,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.7",
+	"libVersion": "2.8.2",
 	"appid": "wx12a04662fac7faa4",
 	"projectname": "wechat-app-goods-show",
 	"scripts": {},
