@@ -2,6 +2,6 @@
   <view style="height:10rpx;background: #eee;width:100%;"></view>
   <ad unit-id="adunit-588264b3e2362e1e"></ad>
   <view style="height:20rpx;background: #eee;width:100%;"></view>
-  <view class="version">Powered by EastWorld</view>
+  <view class="version">小程序技术支持由第三方提供</view>
   <view style="height:20rpx;background: #eee;width:100%;"></view>
 </view>
