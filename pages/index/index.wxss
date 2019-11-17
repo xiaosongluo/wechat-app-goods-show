@@ -3,130 +3,151 @@
   min-height: 100%;
   display: block;
 }
-.category-box {  
+
+.category-box {
   background-color: #fff;
   clear: both;
 }
-.category-list{
-  width:150rpx;
-  margin-top:20rpx;
+
+.category-list {
+  width: 150rpx;
+  margin-top: 20rpx;
   text-align: center;
   display: inline-block;
   overflow: hidden;
 }
-.category-column{
-  width:100%;
-  margin-top:20rpx;
+
+.category-column {
+  width: 100%;
+  margin-top: 20rpx;
   overflow: hidden;
 }
-.category-imgbox{
-  width:60rpx;
-  height:60rpx;
+
+.category-imgbox {
+  width: 60rpx;
+  height: 60rpx;
 }
-.category-title{
+
+.category-title {
   font-size: 24rpx;
-  text-align:center;
-  margin-top:10rpx;
+  text-align: center;
+  margin-top: 10rpx;
 }
-.swiper-container{
+
+.swiper-container {
   width: 750rpx;
-  position: relative;  
+  position: relative;
 }
+
 .swiper_box {
   width: 750rpx;
-  height:250rpx;
+  height: 250rpx;
 }
 
 swiper-item image {
   width: 750rpx;
-  height:250rpx;
+  height: 250rpx;
 }
-.swiper-container .dots{  
-  position: absolute;  
-  left: 0;  
-  right: 0;  
-  bottom: 20rpx;  
-  display: flex;  
-  justify-content: center;  
-}  
-.swiper-container .dots .dot{  
-  margin: 0 8rpx;  
-  width: 14rpx;  
-  height: 14rpx;  
-  background: #fff;  
-  border-radius: 50%;  
-  transition: all .6s;  
-  opacity: .5;
-}  
-.swiper-container .dots .dot.active{  
-  width: 14rpx;  
+
+.swiper-container .dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-container .dots .dot {
+  margin: 0 8rpx;
+  width: 14rpx;
+  height: 14rpx;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.6s;
+  opacity: 0.5;
+}
+
+.swiper-container .dots .dot.active {
+  width: 14rpx;
   opacity: 1;
 }
+
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
   color: transparent;
 }
-.type-item-on{
-  color:#e64340;
+
+.type-item-on {
+  color: #e64340;
   border-bottom: 1rpx solid #e64340;
 }
+
 .weui-loadmore {
   margin-bottom: 0px;
 }
-.goods-container{
+
+.goods-container {
   display: flex;
-  justify-content: space-between;  
-  flex-wrap:wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
   box-sizing: content-box;
   padding: 24rpx;
-  background-color: #F2f2f2;
+  background-color: #f2f2f2;
 }
-.goods-box{
+
+.goods-box {
   width: 339rpx;
   height: 420rpx;
   background-color: #fff;
   overflow: hidden;
   margin-bottom: 24rpx;
-  border-radius:5px;
+  border-radius: 5px;
 }
-.goods-box .img-box{
+
+.goods-box .img-box {
   width: 339rpx;
   height: 339rpx;
   overflow: hidden;
 }
-.goods-box .img-box image{
-   width: 339rpx;
-   height: 339rpx;
+
+.goods-box .img-box image {
+  width: 339rpx;
+  height: 339rpx;
 }
-.goods-box .goods-title{
+
+.goods-box .goods-title {
   width: 280rpx;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   font-size: 24rpx;
   padding: 24rpx 0 0rpx 0;
-  color:#000;
+  color: #000;
   margin-left: 24rpx;
 }
-.goods-box .goods-price{
+
+.goods-box .goods-price {
   width: 280rpx;
   overflow: hidden;
   font-size: 24rpx;
   padding: 24rpx 0;
-  color:#e64340;
+  color: #e64340;
   margin-left: 24rpx;
 }
-.no-more-goods{
+
+.no-more-goods {
   text-align: center;
   font-size: 24rpx;
-  padding-bottom:48rpx; 
+  padding-bottom: 48rpx;
   color: #999;
 }
-.notice{
+
+.notice {
   display: flex;
-  justify-content: space-between;  
-  flex-wrap:wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
   height: 80rpx;
   line-height: 80rpx;
   width: 750rpx;
@@ -134,17 +155,20 @@ swiper-item image {
   background-color: #fff;
   border-bottom: 1rpx solid #efeff4;
 }
+
 .notice_icon {
   margin-top: 25rpx;
-  margin-left:20rpx;
-  width:30rpx;
-  height:30rpx;
+  margin-left: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
 }
-.notice_swiper{
+
+.notice_swiper {
   height: 80rpx;
   line-height: 80rpx;
   width: 680rpx;
 }
+
 .notice_itemr {
   padding-left: 10rpx;
   font-size: 24rpx;
@@ -154,7 +178,8 @@ swiper-item image {
   height: 80rpx;
   line-height: 80rpx;
 }
-.pos-fiexd{
+
+.pos-fiexd {
   position: fixed;
   top: 0;
   left: 0;

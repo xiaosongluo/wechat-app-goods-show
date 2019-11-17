@@ -4,12 +4,12 @@ const CONFIG = require('../../config.js')
 var app = getApp();
 Page({
   data: {
-    banners:[],
+    banners: [],
     swiperMaxNumber: 0,
     swiperCurrent: 0,
     height: wx.getSystemInfoSync().windowHeight
   },
-  onLoad:function(){
+  onLoad: function() {
     const _this = this
     wx.setNavigationBarTitle({
       title: wx.getStorageSync('mallName')
@@ -23,7 +23,7 @@ Page({
       // 展示启动页
       WXAPI.banners({
         type: 'app'
-      }).then(function (res) {
+      }).then(function(res) {
         if (res.code == 700) {
           wx.switchTab({
             url: '/pages/index/index',
@@ -34,23 +34,23 @@ Page({
             swiperMaxNumber: res.data.length
           });
         }
-      }).catch(function (e) {
+      }).catch(function(e) {
         wx.switchTab({
           url: '/pages/index/index',
         });
       })
     }
   },
-  onShow:function(){
-    
+  onShow: function() {
+
   },
-  swiperchange: function (e) {
+  swiperchange: function(e) {
     //console.log(e.detail.current)
     this.setData({
       swiperCurrent: e.detail.current
     })
   },
-  goToIndex: function (e) {
+  goToIndex: function(e) {
     WXAPI.addTempleMsgFormid({
       token: wx.getStorageSync('token'),
       type: 'form',

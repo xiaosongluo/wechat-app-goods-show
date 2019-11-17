@@ -5,11 +5,13 @@
   padding: 15rpx;
   font-size: 14px;
 }
+
 .title {
-  color:chocolate;
+  color: chocolate;
   margin-bottom: 30rpx;
   text-align: center;
 }
+
 .text {
   line-height: 30px;
 }

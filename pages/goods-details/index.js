@@ -50,7 +50,7 @@ Page({
     this.data.goodsId = e.id
     const that = this
   },
-  onShow (){
+  onShow() {
     this.getGoodsDetailAndKanjieInfo(this.data.goodsId)
   },
   async getGoodsDetailAndKanjieInfo(goodsId) {
@@ -113,7 +113,7 @@ Page({
       url: '/pages/index/index',
     });
   },
-  openShareDiv () {
+  openShareDiv() {
     this.setData({
       openShare: true
     })

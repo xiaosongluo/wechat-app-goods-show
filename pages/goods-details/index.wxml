@@ -39,7 +39,7 @@
 </view>
 <view wx:if="{{openShare}}" class="shareFloatDiv1"></view>
 <view wx:if="{{openShare}}" class="shareFloatDiv2">
-  <view class="p1">    
+  <view class="p1">
     <view class="weui-flex">
       <view class="weui-flex__item qrcode-button">
         <button class="weui-btn" type="primary" open-type="share">分享转发</button>

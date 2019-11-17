@@ -4,6 +4,5 @@ const WXAPI = require('../../wxapi/main')
 const AUTH = require('../../utils/auth')
 
 Page({
-	data: {
-  }
+  data: {}
 })

@@ -1,52 +1,59 @@
 @import "/wxParse/wxParse.wxss";
 
 .container {
-  background-color: #F2f2f2;
+  background-color: #f2f2f2;
   min-height: 100%;
   padding-bottom: 100rpx;
 }
-.swiper-container{
+
+.swiper-container {
   width: 100%;
-  position: relative;  
+  position: relative;
 }
+
 .swiper_box {
   width: 100%;
-  height:748rpx;
+  height: 748rpx;
 }
 
 swiper-item image {
   width: 100%;
   display: inline-block;
   overflow: hidden;
-  height:748rpx;
+  height: 748rpx;
 }
-.swiper-container .dots{  
-  position: absolute;  
-  left: 0;  
-  right: 0;  
-  bottom: 20rpx;  
-  display: flex;  
-  justify-content: center;  
-}  
-.swiper-container .dots .dot{  
-  margin: 0 8rpx;  
-  width: 14rpx;  
-  height: 14rpx;  
-  background: #000;  
-  border-radius: 50%;  
-  transition: all .6s;  
-  opacity: .3;
-}  
-.swiper-container .dots .dot.active{  
-  opacity: .6;
+
+.swiper-container .dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: center;
 }
-.goods-info{
+
+.swiper-container .dots .dot {
+  margin: 0 8rpx;
+  width: 14rpx;
+  height: 14rpx;
+  background: #000;
+  border-radius: 50%;
+  transition: all 0.6s;
+  opacity: 0.3;
+}
+
+.swiper-container .dots .dot.active {
+  opacity: 0.6;
+}
+
+.goods-info {
   background-color: #fff;
   padding: 35rpx 0;
   margin-bottom: 24rpx;
   width: 100%;
   position: relative;
 }
+
 .goods-info-fx {
   position: absolute;
   width: 50px;
@@ -54,6 +61,7 @@ swiper-item image {
   right: 0;
   top: 0;
 }
+
 .goods-info-fx button {
   position: absolute;
   width: 50px;
@@ -63,6 +71,7 @@ swiper-item image {
   z-index: 2;
   opacity: 0;
 }
+
 .goods-info-fx image {
   width: 30px;
   height: 30px;
@@ -72,6 +81,7 @@ swiper-item image {
   z-index: 1;
   margin: 10px 10px 0 5px;
 }
+
 .goods-info-fx text {
   position: absolute;
   bottom: 3px;
@@ -80,7 +90,8 @@ swiper-item image {
   font-size: 10px;
   text-align: center;
 }
-.goods-info .goods-title{
+
+.goods-info .goods-title {
   box-sizing: border-box;
   padding: 0 35rpx;
   font-size: 32rpx;
@@ -89,18 +100,20 @@ swiper-item image {
   margin-bottom: 28rpx;
   padding-right: 60px;
 }
-.goods-info .goods-share{
+
+.goods-info .goods-share {
   box-sizing: border-box;
   padding: 0 35rpx;
   font-size: 25rpx;
   line-height: 1.4;
-  color: #CC0000;
+  color: #c00;
   margin-bottom: 28rpx;
 }
-.row-arrow{
+
+.row-arrow {
   width: 100%;
   box-sizing: border-box;
-  padding: 0  120rpx 0 35rpx;
+  padding: 0 120rpx 0 35rpx;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -111,69 +124,82 @@ swiper-item image {
   background: #fff url(https://cdn.it120.cc/images/weappshop/arrow-right.png) no-repeat 697rpx center;
   background-size: 18rpx auto;
 }
-.goods-des-info{
+
+.goods-des-info {
   width: 100%;
   box-sizing: border-box;
   background-color: #fff;
 }
-.label-title{
-  font-size:28rpx;
-  color:#000000;
+
+.label-title {
+  font-size: 28rpx;
+  color: #000;
   padding: 30rpx;
 }
-.goods-text{
+
+.goods-text {
   padding: 0 10rpx;
-  font-size:28rpx;
-  color:#666666;
+  font-size: 28rpx;
+  color: #666;
   line-height: 56rpx;
   margin-bottom: 30rpx;
 }
-.goods-text image{
+
+.goods-text image {
   width: 100%;
 }
+
 .goIndex {
-  position:fixed;
-  right:20rpx;
-  bottom:200rpx;
-  width:80rpx;
-  height:80rpx;
-  border-radius:15px;
+  position: fixed;
+  right: 20rpx;
+  bottom: 200rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 15px;
   background-color: #fff;
   text-align: center;
 }
+
 .goIndex-icon {
-  width:50rpx;
-  height:50rpx;
+  width: 50rpx;
+  height: 50rpx;
   margin-top: 15rpx;
 }
+
 .shareFloatDiv1 {
-  position:fixed;
+  position: fixed;
   top: 0px;
   left: 0px;
-  width:100vw;
-  height:100vh;
-  background-color:#555;filter:Alpha(Opacity=60);opacity:0.6;
+  width: 100vw;
+  height: 100vh;
+  background-color: #555;
+  filter: Alpha(Opacity=60);
+  opacity: 0.6;
   z-index: 99998;
 }
+
 .shareFloatDiv2 {
-  position:fixed;
-  width:100%;
-  height:400rpx;
-  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  height: 400rpx;
+  background-color: #fff;
   bottom: 0rpx;
   z-index: 99999;
 }
+
 .shareFloatDiv2 .p1 {
-  height:260rpx;
+  height: 260rpx;
 }
+
 .shareFloatDiv2 .p2 {
-  height:20rpx;
-  background-color: #EEEEEE;
+  height: 20rpx;
+  background-color: #eee;
 }
+
 .shareFloatDiv2 .p3 {
-  height:120rpx;
+  height: 120rpx;
   line-height: 120rpx;
   text-align: center;
-  color:#555555;
+  color: #555;
   font-size: 16px;
 }

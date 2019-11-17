@@ -20,7 +20,7 @@ Page({
     categories: [],
     activeCategoryId: 0,
     goods: [],
-    
+
     scrollTop: 0,
     loadingMoreHidden: true,
 
@@ -67,14 +67,14 @@ Page({
       selectCurrent: e.index
     })
   },
-  onLoad: function(e) {   
+  onLoad: function(e) {
     wx.showShareMenu({
       withShareTicket: true
-    }) 
+    })
     const that = this
     if (e && e.scene) {
       const scene = decodeURIComponent(e.scene)
-      if (scene) {        
+      if (scene) {
         wx.setStorageSync('referrer', scene.substring(11))
       }
     }
@@ -88,8 +88,7 @@ Page({
     WXAPI.banners({
       type: 'new'
     }).then(function(res) {
-      if (res.code == 700) {
-      } else {
+      if (res.code == 700) {} else {
         that.setData({
           banners: res.data
         });
@@ -117,11 +116,11 @@ Page({
     WXAPI.goods({
       recommendStatus: 1
     }).then(res => {
-      if (res.code === 0){
+      if (res.code === 0) {
         that.setData({
           goodsRecommend: res.data
         })
-      }      
+      }
     })
     that.getNotice()
   },
@@ -169,7 +168,7 @@ Page({
       });
     })
   },
-  onShareAppMessage: function() {    
+  onShareAppMessage: function() {
     return {
       title: '"' + wx.getStorageSync('mallName') + '" ' + CONFIG.shareProfile,
       path: '/pages/index/index?inviter_id=' + wx.getStorageSync('uid')
@@ -177,7 +176,9 @@ Page({
   },
   getNotice: function() {
     var that = this;
-    WXAPI.noticeList({pageSize: 5}).then(function (res) {
+    WXAPI.noticeList({
+      pageSize: 5
+    }).then(function(res) {
       if (res.code == 0) {
         that.setData({
           noticeList: res.data
@@ -205,23 +206,23 @@ Page({
     wx.stopPullDownRefresh()
   },
   // 以下为搜索框事件
-  showInput: function () {
+  showInput: function() {
     this.setData({
       inputShowed: true
     });
   },
-  hideInput: function () {
+  hideInput: function() {
     this.setData({
       inputVal: "",
       inputShowed: false
     });
   },
-  clearInput: function () {
+  clearInput: function() {
     this.setData({
       inputVal: ""
     });
   },
-  inputTyping: function (e) {
+  inputTyping: function(e) {
     this.setData({
       inputVal: e.detail.value
     });
